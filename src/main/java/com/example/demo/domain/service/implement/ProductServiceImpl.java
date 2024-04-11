@@ -9,6 +9,7 @@ import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.presentation.request.dto.ProductDto;
 import com.example.demo.presentation.response.pojo.CategoryPojo;
 import com.example.demo.presentation.response.pojo.ProductPojo;
+import com.example.demo.presentation.response.pojo.enums.InventoryStatus;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -30,6 +31,7 @@ public class ProductServiceImpl implements ProductService {
         productRepository.save(product);
         CategoryPojo categoryPojo = categoryService.getCategoryById(dto.getCategoryId());
         ProductPojo productPojo = productMapper.toPojo(product);
+        productPojo=addInventoryStatus(productPojo);
         productPojo.setCategory(categoryPojo.getName());
         return productPojo;
     }
@@ -38,6 +40,7 @@ public class ProductServiceImpl implements ProductService {
     public List<ProductPojo> getAll() {
         List<ProductPojo> list = productRepository.findProductsWithCategoryNames();
         System.out.println(list);
+        list.stream().map(this::addInventoryStatus).toList();
         return list;
     }
     @Override
@@ -47,6 +50,7 @@ public class ProductServiceImpl implements ProductService {
         ProductPojo productPojo = productMapper.toPojo(product);
         CategoryPojo categoryPojo = categoryService.getCategoryById(product.getCategory().getId());
         productPojo.setCategory(categoryPojo.getName());
+        productPojo=addInventoryStatus(productPojo);
         return productPojo;
     }
 
@@ -62,5 +66,20 @@ public class ProductServiceImpl implements ProductService {
     }
     private List<ProductPojo> toPojoList(List<Product> productList) {
         return productList.stream().map(productMapper::toPojo).toList();
+    }
+    private ProductPojo addInventoryStatus(ProductPojo productPojo) {
+        switch (productPojo.getStock()) {
+            case 0:
+                productPojo.setInventoryStatus(InventoryStatus.OUTOFSTOCK);
+                break;
+            case 1:
+            case 2:
+            case 3:
+                productPojo.setInventoryStatus(InventoryStatus.LOWSTOCK);
+                break;
+            default:
+                productPojo.setInventoryStatus(InventoryStatus.INSTOCK);
+        }
+        return productPojo;
     }
 }
