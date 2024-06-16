@@ -1,8 +1,10 @@
 package com.example.demo.domain.service.implement;
 
 import com.example.demo.data.repository.ExpenseRepository;
+import com.example.demo.domain.entity.DocumentType;
 import com.example.demo.domain.entity.Expense;
 import com.example.demo.domain.mapper.ExpenseMapper;
+import com.example.demo.domain.service.interfaces.DocumentTypeService;
 import com.example.demo.domain.service.interfaces.ExpenseService;
 import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.presentation.request.dto.ExpenseDto;
@@ -16,11 +18,14 @@ import java.util.List;
 @Service
 public class ExpenseServiceImpl implements ExpenseService {
     private final ExpenseRepository expenseRepository;
+    private final DocumentTypeService documentTypeService;
     private final ExpenseMapper expenseMapper;
 
     @Override
     public ExpensePojo createExpense(ExpenseDto expenseDto) {
         Expense expense = expenseMapper.fromDto(expenseDto);
+        DocumentType documentType = documentTypeService.getDocumentType(expenseDto.getDocumentTypeId());
+        expense.setDocumentType(documentType);
         expenseRepository.save(expense);
         return expenseMapper.toPojo(expense);
     }
