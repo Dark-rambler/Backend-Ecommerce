@@ -5,18 +5,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
-@Pojo
-@NoArgsConstructor
 @Getter
 @Setter
-public class ExpensePojo {
-    private int id;
+@NoArgsConstructor
+@Pojo
+public class DocumentTypePojo {
+    private Integer id;
     private String name;
     private String description;
-    private double amount;
-    private Date date;
-    private String documentTypeName;
-    private int documentTypeId;
 }

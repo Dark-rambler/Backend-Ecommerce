@@ -14,6 +14,8 @@ public class ExpenseMapper {
         expensePojo.setDate(expense.getDate());
         expensePojo.setAmount(expense.getAmount());
         expensePojo.setDescription(expense.getDescription());
+        expensePojo.setDocumentTypeId(expense.getDocumentType().getId());
+        expensePojo.setDocumentTypeName(expense.getDocumentType().getName());
         return expensePojo;
     }
 
