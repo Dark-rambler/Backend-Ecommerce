@@ -17,4 +17,6 @@ public class ExpensePojo {
     private String description;
     private double amount;
     private Date date;
+    private String documentTypeName;
+    private int documentTypeId;
 }
