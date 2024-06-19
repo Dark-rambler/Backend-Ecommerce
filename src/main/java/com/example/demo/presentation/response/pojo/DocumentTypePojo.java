@@ -1,15 +1,16 @@
 package com.example.demo.presentation.response.pojo;
 
 import com.example.demo.common.Pojo;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Pojo
 @NoArgsConstructor
-@Getter
-@Setter
-public class CategoryPojo {
-    private int id;
+@AllArgsConstructor
+@Pojo
+public class DocumentTypePojo {
+    private Integer id;
     private String name;
+    private String description;
 }

@@ -4,19 +4,20 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
+import java.util.List;
+import java.util.Set;
+
 @Getter
 @Setter
-public class Product extends Base {
+@Entity
+public class DocumentType extends Base{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private Double price;
     private String description;
-    private String imageUrl;
-    private Integer stock;
-    @ManyToOne
-    @JoinColumn(name = "category_id")
-    private Category category;
+
+/*    @OneToMany(mappedBy = "documentType")
+    private Set<Expense> expenses;*/
+
 }
