@@ -43,7 +43,7 @@ public class ErrorHandler {
      * */
     @ExceptionHandler(EntityNotFoundException.class)
     public  ResponseEntity<ErrorResponse> handlerEntityNotFoundException(HttpServletRequest req, Exception ex){
-        HttpStatus status = HttpStatus.BAD_REQUEST;
+        HttpStatus status = HttpStatus.NOT_FOUND;
         ErrorResponse response = new ErrorResponse(status.value(), status.name(), ex.getMessage(), req.getRequestURI());
         return ResponseEntity.status(status).body(response);
     }

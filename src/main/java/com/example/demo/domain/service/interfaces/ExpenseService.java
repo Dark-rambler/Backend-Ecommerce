@@ -7,9 +7,9 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 public interface ExpenseService {
-    ExpensePojo createExpense(ExpenseDto expenseDto);
+    /*ExpensePojo createExpense(ExpenseDto expenseDto);
     ExpensePojo updateExpense(ExpenseDto expenseDto);
     void deleteExpense(int id);
     ExpensePojo getExpense( int id);
-    List<ExpensePojo> getAllExpenses();
+    List<ExpensePojo> getAllExpenses();*/
 }

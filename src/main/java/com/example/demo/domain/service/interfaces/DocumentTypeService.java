@@ -6,19 +6,11 @@ import com.example.demo.presentation.response.pojo.DocumentTypePojo;
 
 import java.util.List;
 
-public interface DocumentTypeService {
+public interface DocumentTypeService extends CRUDService<DocumentType, Integer> {
+    DocumentType create (DocumentTypeDto dto);
+    DocumentType update (Integer id, DocumentTypeDto dto);
+    DocumentTypePojo getPojoById (Integer id);
+    void delete (Integer id);
 
-    DocumentTypePojo createDocumentType(DocumentTypeDto documentTypeDto);
-
-    List<DocumentTypePojo> getAll();
-
-    DocumentTypePojo getDocumentTypeById(int id);
-
-    void deleteDocumentType(int id);
-
-    DocumentTypePojo updateDocumentType(int id, DocumentTypeDto documentTypeDto);
-
-    DocumentType getDocumentType(int id);
-
-
+    List<DocumentTypePojo> search();
 }

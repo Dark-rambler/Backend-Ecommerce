@@ -1,13 +1,13 @@
 package com.example.demo.presentation.response.pojo;
 
 import com.example.demo.common.Pojo;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Pojo
 public class DocumentTypePojo {
     private Integer id;

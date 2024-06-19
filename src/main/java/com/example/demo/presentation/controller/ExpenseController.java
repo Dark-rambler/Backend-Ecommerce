@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/expenses")
 public class ExpenseController {
 
-    private final ExpenseService expenseService;
+    /*private final ExpenseService expenseService;
 
     @GetMapping
     public ResponseEntity<List<ExpensePojo>> getAll() {
@@ -33,5 +33,5 @@ public class ExpenseController {
     public ResponseEntity<ExpensePojo> createExpense(@RequestBody ExpenseDto expenseDto) {
         ExpensePojo expense = expenseService.createExpense(expenseDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(expense);
-    }
+    }*/
 }

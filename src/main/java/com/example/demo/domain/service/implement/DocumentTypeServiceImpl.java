@@ -1,9 +1,12 @@
 package com.example.demo.domain.service.implement;
 
+import com.example.demo.common.SpanishEntityNameProvider;
 import com.example.demo.data.repository.DocumentTypeRepository;
+import com.example.demo.data.repository.GenericRepository;
 import com.example.demo.domain.entity.DocumentType;
 import com.example.demo.domain.mapper.DocumentTypeMapper;
 import com.example.demo.domain.service.interfaces.DocumentTypeService;
+import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.presentation.request.dto.DocumentTypeDto;
 import com.example.demo.presentation.response.pojo.DocumentTypePojo;
 import lombok.AllArgsConstructor;
@@ -11,58 +14,39 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@AllArgsConstructor
 @Service
-public class DocumentTypeServiceImpl implements DocumentTypeService {
+@AllArgsConstructor
+public class DocumentTypeServiceImpl extends CRUDServiceImpl<DocumentType, Integer> implements DocumentTypeService{
 
-    private  DocumentTypeRepository documentTypeRepository;
-    private  DocumentTypeMapper documentTypeMapper;
+    private final DocumentTypeRepository repository;
+    private final DocumentTypeMapper mapper;
+
+    private static final String DOCUMENT_TYPE = SpanishEntityNameProvider.getSpanishName("DocumentType");
+
     @Override
-    public DocumentTypePojo createDocumentType(DocumentTypeDto documentTypeDto) {
-    DocumentTypePojo documentTypePojo = documentTypeMapper.toPojo(documentTypeRepository.save(documentTypeMapper.fromDto(documentTypeDto)));
-    return documentTypePojo;
+    protected GenericRepository<DocumentType, Integer> getRepository() {
+        return repository;
     }
 
     @Override
-    public List<DocumentTypePojo> getAll() {
-        List<DocumentType> documentTypeList = documentTypeRepository.findAll();
-        return toPojoList(documentTypeList);
-
+    public DocumentType create(DocumentTypeDto dto) {
+        return super.create(mapper.fromDto(dto));
     }
 
     @Override
-    public DocumentTypePojo getDocumentTypeById(int id) {
-        DocumentType documentType = documentTypeRepository.findById(id).orElseThrow(() -> new RuntimeException("Document Type not found" + id));
-        return documentTypeMapper.toPojo(documentType);
+    public DocumentType update(Integer id, DocumentTypeDto dto) {
+        DocumentType found = repository.findByIdAndActive(id, true)
+                .orElseThrow(() -> new EntityNotFoundException(DOCUMENT_TYPE, id));
+        return repository.save(mapper.fromDto(dto, found));
     }
 
     @Override
-    public void deleteDocumentType(int id) {
-        DocumentType documentType = documentTypeRepository.findById(id).orElseThrow(() -> new RuntimeException("Document Type not found" + id));
-        if (documentType != null) {
-            documentTypeRepository.delete(documentType);
-        }
-
+    public DocumentTypePojo getPojoById(Integer id) {
+        return repository.getPojoById(id);
     }
 
     @Override
-    public DocumentTypePojo updateDocumentType(int id, DocumentTypeDto documentTypeDto) {
-        DocumentType documentType = documentTypeRepository.findById(id).orElseThrow(() -> new RuntimeException("Document Type not found" + id));
-        documentType.setName(documentTypeDto.getName());
-        documentType.setDescription(documentTypeDto.getDescription());
-        DocumentTypePojo documentTypePojo = documentTypeMapper.toPojo(documentTypeRepository.save(documentType));
-        return documentTypePojo;
-    }
-
-    @Override
-    public DocumentType getDocumentType(int id) {
-        return documentTypeRepository.findById(id).orElseThrow(() -> new RuntimeException("Document Type not found" + id));
-    }
-
-
-    private List<DocumentTypePojo> toPojoList(List<DocumentType> documentTypeList) {
-        List<DocumentTypePojo> documentTypePojoList = documentTypeList.stream().map((entity)->
-                documentTypeMapper.toPojo(entity)).toList();
-        return documentTypePojoList;
+    public List<DocumentTypePojo> search() {
+        return repository.search();
     }
 }

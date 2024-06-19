@@ -6,7 +6,6 @@ import com.example.demo.domain.entity.Expense;
 import com.example.demo.domain.mapper.ExpenseMapper;
 import com.example.demo.domain.service.interfaces.DocumentTypeService;
 import com.example.demo.domain.service.interfaces.ExpenseService;
-import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.presentation.request.dto.ExpenseDto;
 import com.example.demo.presentation.response.pojo.ExpensePojo;
 import lombok.AllArgsConstructor;
@@ -17,7 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 @Service
 public class ExpenseServiceImpl implements ExpenseService {
-    private final ExpenseRepository expenseRepository;
+    /*private final ExpenseRepository expenseRepository;
     private final DocumentTypeService documentTypeService;
     private final ExpenseMapper expenseMapper;
 
@@ -59,5 +58,5 @@ public class ExpenseServiceImpl implements ExpenseService {
         List<ExpensePojo> expensePojoList = expenseList.stream().map((entity)->
                 expenseMapper.toPojo(entity)).toList();
         return expensePojoList;
-    }
+    }*/
 }
