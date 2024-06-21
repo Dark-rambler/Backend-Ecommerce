@@ -71,8 +71,8 @@ public class TransactionServiceImpl extends CRUDServiceImpl<Transaction, Integer
   }
 
   @Override
-  public List<TransactionPojo> search() {
-    return repository.search();
+  public List<TransactionPojo> search( Boolean isIncome) {
+    return repository.search(isIncome);
   }
 
 

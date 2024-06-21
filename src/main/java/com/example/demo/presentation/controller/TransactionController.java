@@ -62,8 +62,8 @@ public class TransactionController {
 
   @Operation(summary = "Obtener un listado de transacciones")
   @GetMapping("/search")
-  public ResponseEntity<List<TransactionPojo>> search() {
-    List<TransactionPojo> list = service.search();
+  public ResponseEntity<List<TransactionPojo>> search(@PathVariable @RequestParam(required = true) Boolean isIncome ) {
+    List<TransactionPojo> list = service.search( isIncome);
     return ResponseEntity.status(HttpStatus.OK).body(list);
   }
 }
