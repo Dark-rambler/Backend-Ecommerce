@@ -14,6 +14,8 @@ build/
 .springBeans
 .sts4-cache
 bin/
+logs/
+logs
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
@@ -36,6 +38,6 @@ out/
 ### VS Code ###
 .vscode/
 
-### Logs ###
-logs/
+### Other Files ###
+spring.log
 
