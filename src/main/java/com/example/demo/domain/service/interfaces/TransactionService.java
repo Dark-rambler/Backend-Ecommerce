@@ -10,5 +10,5 @@ public interface TransactionService extends CRUDService<Transaction, Integer> {
   Transaction update(Integer id, TransactionDto dto);
   TransactionPojo getPojoById(Integer id);
   void delete(Integer id);
-  List<TransactionPojo> search();
+  List<TransactionPojo> search( Boolean isIncome);
 }

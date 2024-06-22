@@ -9,6 +9,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Pojo
+@Getter
+@Setter
 public class DocumentTypePojo {
     private Integer id;
     private String name;

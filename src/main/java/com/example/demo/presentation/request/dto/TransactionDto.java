@@ -8,6 +8,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class TransactionDto {
+
+  @NotNull(message = "{transactionDto.socialReason.not-null}")
+  private String socialReason;
+
+  @NotNull(message = "{transactionDto.documentNumber.not-null}")
+  private String documentNumber;
   @NotNull(message = "{transactionDto.amount.not-null}")
   private Double amount;
 

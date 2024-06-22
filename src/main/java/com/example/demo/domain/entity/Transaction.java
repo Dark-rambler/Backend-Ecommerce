@@ -21,6 +21,12 @@ public class Transaction extends Base{
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
 
+  @Column(name = "social_reason", nullable = false)
+  private String socialReason;
+
+  @Column(name = "document_number", nullable = false)
+  private String documentNumber;
+
   @Column(name = "is_income", nullable = false)
   private Boolean isIncome;
 
