@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "f34f1665-5e41-4fcf-b205-baa04281df11",
+		"name": "No tiene nombre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23778200"
+	},
+	"item": [
+		{
+			"name": "Document type",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Factura\",\r\n    \"description\": \"Factura junio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/documentType",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"documentType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Factura\",\r\n    \"description\": \"Factura junio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/documentType/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"documentType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/documentType/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"documentType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/documentType/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"documentType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/documentType/search",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"documentType",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 1500,\r\n    \"isIncome\": false,\r\n    \"description\": \"\",\r\n    \"date\": \"2024-03-15T10:00\",\r\n    \"socialReason\": \"Jeimi Barral\",\r\n    \"documentNumber\": 123,\r\n    \"documentTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/transaction",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 500,\r\n    \"isIncome\": false,\r\n    \"description\": \"\",\r\n    \"date\": \"\",\r\n    \"documentTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/transaction/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"transaction",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/transaction/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"transaction",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/transaction/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"transaction",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/transaction/search",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"transaction",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/transaction/transactionSummary?startDate=2024-03-01T10:00&endDate=2024-03-30T10:00",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"transaction",
+								"transactionSummary"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-03-01T10:00"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-03-30T10:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get monthly summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/{{ContextPath}}/transaction/transactionMonthlySummary?startDate=2024-01-01T10:00&endDate=2024-06-30T10:00",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"{{ContextPath}}",
+								"transaction",
+								"transactionMonthlySummary"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-01T10:00"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-06-30T10:00"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "http://localhost:8085",
+			"type": "string"
+		},
+		{
+			"key": "ContextPath",
+			"value": "store/v1",
+			"type": "string"
+		}
+	]
+}

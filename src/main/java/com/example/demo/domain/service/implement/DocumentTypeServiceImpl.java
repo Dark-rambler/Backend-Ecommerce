@@ -41,6 +41,14 @@ public class DocumentTypeServiceImpl extends CRUDServiceImpl<DocumentType, Integ
     }
 
     @Override
+    public void delete(Integer integer) {
+        DocumentType documentType = repository.findByIdAndActive(integer, true)
+                .orElseThrow(() -> new EntityNotFoundException(DOCUMENT_TYPE, integer));
+        documentType.setActive(false);
+        repository.save(documentType);
+    }
+
+    @Override
     public DocumentTypePojo getPojoById(Integer id) {
         return repository.getPojoById(id);
     }
