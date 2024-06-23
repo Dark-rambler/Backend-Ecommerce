@@ -4,10 +4,13 @@ package com.example.demo.presentation.controller;
 import com.example.demo.domain.entity.Transaction;
 import com.example.demo.domain.service.interfaces.TransactionService;
 import com.example.demo.presentation.request.dto.TransactionDto;
+import com.example.demo.presentation.response.pojo.TransactionMonthlySummaryPojo;
 import com.example.demo.presentation.response.pojo.TransactionPojo;
+import com.example.demo.presentation.response.pojo.TransactionSummaryPojo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import java.time.LocalDateTime;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -64,6 +67,24 @@ public class TransactionController {
   @GetMapping("/search")
   public ResponseEntity<List<TransactionPojo>> search(@PathVariable @RequestParam(required = true) Boolean isIncome ) {
     List<TransactionPojo> list = service.search( isIncome);
+    return ResponseEntity.status(HttpStatus.OK).body(list);
+  }
+
+  @Operation(summary = "Obtener un listado de transacciones por fechas")
+  @GetMapping("/transactionSummary")
+  public ResponseEntity<TransactionSummaryPojo> getSummary(
+      @PathVariable @RequestParam(required = true)LocalDateTime startDate,
+      @PathVariable @RequestParam(required = true)LocalDateTime endDate) {
+    TransactionSummaryPojo list = service.getSummary(startDate, endDate);
+    return ResponseEntity.status(HttpStatus.OK).body(list);
+  }
+
+  @Operation(summary = "Obtener un listado de transacciones por fechas")
+  @GetMapping("/transactionMonthlySummary")
+  public ResponseEntity<TransactionMonthlySummaryPojo> getMonthlySummary(
+      @PathVariable @RequestParam(required = true)LocalDateTime startDate,
+      @PathVariable @RequestParam(required = true)LocalDateTime endDate) {
+    TransactionMonthlySummaryPojo list = service.getMonthlySummary(startDate, endDate);
     return ResponseEntity.status(HttpStatus.OK).body(list);
   }
 }
