@@ -7992,3 +7992,668 @@ Consider defining a bean of type 'com.example.demo.domain.service.interfaces.Tra
 2024-06-21T16:22:21.249-04:00  INFO 13344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-21T16:22:21.256-04:00  INFO 13344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-06-21T16:22:21.270-04:00  INFO 13344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T11:13:25.065-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 14812 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T11:13:25.069-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T11:13:25.166-04:00  INFO 14812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23T11:13:25.166-04:00  INFO 14812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23T11:13:26.784-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T11:13:26.913-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 3 JPA repository interfaces.
+2024-06-23T11:13:27.815-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T11:13:27.838-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T11:13:27.838-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T11:13:27.940-04:00  INFO 14812 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T11:13:27.940-04:00  INFO 14812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2773 ms
+2024-06-23T11:13:28.189-04:00  INFO 14812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T11:13:28.276-04:00  INFO 14812 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T11:13:28.325-04:00  INFO 14812 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T11:13:28.796-04:00  INFO 14812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T11:13:28.838-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T11:13:29.309-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a675fba
+2024-06-23T11:13:29.312-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T11:13:29.414-04:00  WARN 14812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T11:13:29.423-04:00  WARN 14812 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T11:13:31.222-04:00  INFO 14812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T11:13:31.962-04:00  INFO 14812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:13:32.488-04:00  INFO 14812 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-23T11:13:33.613-04:00  WARN 14812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T11:13:34.208-04:00  INFO 14812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T11:13:34.273-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T11:13:34.291-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 10.098 seconds (process running for 11.998)
+2024-06-23T11:16:12.060-04:00  INFO 14812 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T11:16:12.061-04:00  INFO 14812 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T11:16:12.065-04:00  INFO 14812 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-06-23T11:21:56.493-04:00  INFO 14812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2024-06-23T11:21:56.556-04:00  INFO 14812 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:21:56.563-04:00  INFO 14812 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T11:21:56.570-04:00  INFO 14812 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T11:21:56.828-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 14812 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T11:21:56.829-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T11:21:57.553-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T11:21:57.577-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2024-06-23T11:21:57.730-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T11:21:57.731-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T11:21:57.731-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T11:21:57.772-04:00  INFO 14812 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T11:21:57.773-04:00  INFO 14812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 942 ms
+2024-06-23T11:21:57.827-04:00  INFO 14812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T11:21:57.832-04:00  INFO 14812 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T11:21:57.839-04:00  INFO 14812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T11:21:57.840-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-23T11:21:58.064-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7a881f92
+2024-06-23T11:21:58.065-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-23T11:21:58.091-04:00  WARN 14812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T11:21:58.092-04:00  WARN 14812 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T11:21:58.313-04:00  INFO 14812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T11:21:58.560-04:00  INFO 14812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:21:58.933-04:00  WARN 14812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T11:21:59.278-04:00  INFO 14812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T11:21:59.312-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T11:21:59.327-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 2.578 seconds (process running for 517.034)
+2024-06-23T11:21:59.331-04:00  INFO 14812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-23T11:23:51.590-04:00  INFO 14812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-23T11:23:51.609-04:00  INFO 14812 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:23:51.611-04:00  INFO 14812 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-23T11:23:51.619-04:00  INFO 14812 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-06-23T11:23:51.794-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 14812 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T11:23:51.795-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T11:23:52.496-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T11:23:52.529-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2024-06-23T11:23:52.734-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T11:23:52.736-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T11:23:52.737-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T11:23:52.812-04:00  INFO 14812 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T11:23:52.812-04:00  INFO 14812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+2024-06-23T11:23:52.857-04:00  INFO 14812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T11:23:52.862-04:00  INFO 14812 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T11:23:52.868-04:00  INFO 14812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T11:23:52.869-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-06-23T11:23:53.154-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@2f1bc328
+2024-06-23T11:23:53.154-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-06-23T11:23:53.178-04:00  WARN 14812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T11:23:53.179-04:00  WARN 14812 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T11:23:53.430-04:00  INFO 14812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T11:23:53.469-04:00  INFO 14812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:23:53.740-04:00  WARN 14812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionController' defined in file [D:\backendProject\Backend-Ecommerce\build\classes\java\main\com\example\demo\presentation\controller\TransactionController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.service.interfaces.TransactionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-23T11:23:53.741-04:00  INFO 14812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:23:53.741-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-06-23T11:23:53.958-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-06-23T11:23:53.959-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-23T11:23:53.973-04:00  INFO 14812 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-23T11:23:54.025-04:00 ERROR 14812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.demo.presentation.controller.TransactionController required a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' in your configuration.
+
+2024-06-23T11:23:55.537-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 14812 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T11:23:55.537-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T11:23:55.728-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T11:23:55.742-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2024-06-23T11:23:55.860-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T11:23:55.862-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T11:23:55.863-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T11:23:55.900-04:00  INFO 14812 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T11:23:55.900-04:00  INFO 14812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
+2024-06-23T11:23:55.934-04:00  INFO 14812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T11:23:55.938-04:00  INFO 14812 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T11:23:55.944-04:00  INFO 14812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T11:23:55.945-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-06-23T11:23:56.110-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@3bc9b29f
+2024-06-23T11:23:56.111-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-06-23T11:23:56.120-04:00  WARN 14812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T11:23:56.120-04:00  WARN 14812 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T11:23:56.211-04:00  INFO 14812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T11:23:56.233-04:00  INFO 14812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:23:56.464-04:00  WARN 14812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T11:23:56.623-04:00  INFO 14812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T11:23:56.645-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T11:23:56.651-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.156 seconds (process running for 634.358)
+2024-06-23T11:23:56.653-04:00  INFO 14812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-23T11:24:00.380-04:00  INFO 14812 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T11:24:00.380-04:00  INFO 14812 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T11:24:00.382-04:00  INFO 14812 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T11:27:36.173-04:00  WARN 14812 --- [http-nio-8085-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "19-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '19-06-2024' could not be parsed at index 0]
+2024-06-23T11:27:39.214-04:00  WARN 14812 --- [http-nio-8085-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "19-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '19-06-2024' could not be parsed at index 0]
+2024-06-23T11:29:22.748-04:00  INFO 14812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-06-23T11:29:22.761-04:00  INFO 14812 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:29:22.761-04:00  INFO 14812 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-06-23T11:29:22.765-04:00  INFO 14812 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-06-23T11:29:22.887-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 14812 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T11:29:22.888-04:00  INFO 14812 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T11:29:23.447-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T11:29:23.468-04:00  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-06-23T11:29:23.585-04:00  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T11:29:23.586-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T11:29:23.586-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T11:29:23.630-04:00  INFO 14812 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T11:29:23.630-04:00  INFO 14812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 738 ms
+2024-06-23T11:29:23.718-04:00  INFO 14812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T11:29:23.730-04:00  INFO 14812 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T11:29:23.750-04:00  INFO 14812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T11:29:23.753-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-06-23T11:29:24.065-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@42a606e0
+2024-06-23T11:29:24.065-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-06-23T11:29:24.083-04:00  WARN 14812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T11:29:24.084-04:00  WARN 14812 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T11:29:24.293-04:00  INFO 14812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T11:29:24.347-04:00  INFO 14812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:29:24.652-04:00  WARN 14812 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionController' defined in file [D:\backendProject\Backend-Ecommerce\build\classes\java\main\com\example\demo\presentation\controller\TransactionController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.service.interfaces.TransactionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-23T11:29:24.653-04:00  INFO 14812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:29:24.654-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-06-23T11:29:24.678-04:00  INFO 14812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-06-23T11:29:24.679-04:00  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-23T11:29:24.694-04:00  INFO 14812 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-23T11:29:24.706-04:00 ERROR 14812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.demo.presentation.controller.TransactionController required a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' in your configuration.
+
+2024-06-23T11:29:54.466-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 15348 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T11:29:54.469-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T11:29:54.544-04:00  INFO 15348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23T11:29:54.544-04:00  INFO 15348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23T11:29:56.055-04:00  INFO 15348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T11:29:56.166-04:00  INFO 15348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 3 JPA repository interfaces.
+2024-06-23T11:29:57.017-04:00  INFO 15348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T11:29:57.048-04:00  INFO 15348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T11:29:57.049-04:00  INFO 15348 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T11:29:57.167-04:00  INFO 15348 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T11:29:57.168-04:00  INFO 15348 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2623 ms
+2024-06-23T11:29:57.612-04:00  INFO 15348 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T11:29:57.754-04:00  INFO 15348 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T11:29:57.858-04:00  INFO 15348 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T11:29:58.517-04:00  INFO 15348 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T11:29:58.573-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T11:29:58.958-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16dd3ddc
+2024-06-23T11:29:58.960-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T11:29:59.018-04:00  WARN 15348 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T11:29:59.031-04:00  WARN 15348 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T11:30:00.765-04:00  INFO 15348 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T11:30:00.837-04:00  INFO 15348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T11:30:01.181-04:00  INFO 15348 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-23T11:30:02.808-04:00  WARN 15348 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T11:30:03.461-04:00  INFO 15348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T11:30:03.586-04:00  INFO 15348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T11:30:03.600-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 9.833 seconds (process running for 12.059)
+2024-06-23T11:30:08.606-04:00  INFO 15348 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T11:30:08.606-04:00  INFO 15348 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T11:30:08.608-04:00  INFO 15348 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T11:35:13.521-04:00  WARN 15348 --- [http-nio-8085-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "11-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '11-06-2024' could not be parsed at index 0]
+2024-06-23T11:35:14.542-04:00  WARN 15348 --- [http-nio-8085-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "11-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '11-06-2024' could not be parsed at index 0]
+2024-06-23T11:35:14.856-04:00  WARN 15348 --- [http-nio-8085-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "11-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '11-06-2024' could not be parsed at index 0]
+2024-06-23T11:35:15.113-04:00  WARN 15348 --- [http-nio-8085-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "11-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '11-06-2024' could not be parsed at index 0]
+2024-06-23T11:35:15.367-04:00  WARN 15348 --- [http-nio-8085-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "11-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '11-06-2024' could not be parsed at index 0]
+2024-06-23T11:35:26.294-04:00  WARN 15348 --- [http-nio-8085-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "05-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '05-06-2024' could not be parsed at index 0]
+2024-06-23T11:35:27.774-04:00  WARN 15348 --- [http-nio-8085-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "05-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '05-06-2024' could not be parsed at index 0]
+2024-06-23T11:35:43.360-04:00  WARN 15348 --- [http-nio-8085-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "05-06-2024": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '05-06-2024' could not be parsed at index 0]
+2024-06-23T11:59:57.423-04:00  WARN 15348 --- [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Invalid Date]]
+2024-06-23T12:00:43.222-04:00  WARN 15348 --- [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sun Jun 23 2024 12:00:43 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:00:56.173-04:00  WARN 15348 --- [http-nio-8085-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:01:14.513-04:00  WARN 15348 --- [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:03:19.160-04:00  WARN 15348 --- [http-nio-8085-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:03:45.544-04:00  WARN 15348 --- [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:08:23.875-04:00  WARN 15348 --- [http-nio-8085-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:14:44.158-04:00  WARN 15348 --- [http-nio-8085-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:15:12.901-04:00  WARN 15348 --- [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:16:00.661-04:00  WARN 15348 --- [http-nio-8085-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:16:21.919-04:00  WARN 15348 --- [http-nio-8085-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:16:28.771-04:00  WARN 15348 --- [http-nio-8085-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:16:35.348-04:00  WARN 15348 --- [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:18:12.465-04:00  WARN 15348 --- [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:18:30.076-04:00  WARN 15348 --- [http-nio-8085-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:18:35.221-04:00  WARN 15348 --- [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:19:16.807-04:00  WARN 15348 --- [http-nio-8085-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:19:48.057-04:00  WARN 15348 --- [http-nio-8085-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:20:36.174-04:00  WARN 15348 --- [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:20:55.804-04:00  WARN 15348 --- [http-nio-8085-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:21:05.953-04:00  WARN 15348 --- [http-nio-8085-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:21:09.325-04:00  WARN 15348 --- [http-nio-8085-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:21:17.996-04:00  WARN 15348 --- [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:21:26.424-04:00  WARN 15348 --- [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:21:42.551-04:00  WARN 15348 --- [http-nio-8085-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:23:07.513-04:00  WARN 15348 --- [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:23:55.300-04:00  WARN 15348 --- [http-nio-8085-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:24:09.715-04:00  WARN 15348 --- [http-nio-8085-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:24:14.242-04:00  WARN 15348 --- [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:24:24.057-04:00  WARN 15348 --- [http-nio-8085-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:24:35.136-04:00  WARN 15348 --- [http-nio-8085-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:24:53.457-04:00  WARN 15348 --- [http-nio-8085-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:25:00.414-04:00  WARN 15348 --- [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:25:19.137-04:00  WARN 15348 --- [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sat Jun 22 2024 20:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T12:56:17.488-04:00  INFO 15348 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-06-23T12:56:17.553-04:00  INFO 15348 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T12:56:17.564-04:00  INFO 15348 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T12:56:17.569-04:00  INFO 15348 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T12:56:17.810-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 15348 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T12:56:17.811-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T12:56:18.866-04:00  INFO 15348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T12:56:18.956-04:00  INFO 15348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+2024-06-23T12:56:19.387-04:00  INFO 15348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T12:56:19.389-04:00  INFO 15348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T12:56:19.390-04:00  INFO 15348 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T12:56:19.466-04:00  INFO 15348 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T12:56:19.467-04:00  INFO 15348 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1651 ms
+2024-06-23T12:56:19.544-04:00  INFO 15348 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T12:56:19.552-04:00  INFO 15348 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T12:56:19.562-04:00  INFO 15348 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T12:56:19.564-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-23T12:56:19.926-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4405c6eb
+2024-06-23T12:56:19.927-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-23T12:56:20.001-04:00  WARN 15348 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T12:56:20.002-04:00  WARN 15348 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T12:56:20.271-04:00  INFO 15348 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T12:56:20.453-04:00  INFO 15348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T12:56:20.942-04:00  WARN 15348 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionController' defined in file [D:\backendProject\Backend-Ecommerce\build\classes\java\main\com\example\demo\presentation\controller\TransactionController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.service.interfaces.TransactionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-23T12:56:20.943-04:00  INFO 15348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T12:56:20.949-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-23T12:56:21.364-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-06-23T12:56:21.365-04:00  INFO 15348 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-23T12:56:21.381-04:00  INFO 15348 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-23T12:56:21.446-04:00 ERROR 15348 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.demo.presentation.controller.TransactionController required a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' in your configuration.
+
+2024-06-23T12:56:22.978-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 15348 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T12:56:22.979-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T12:56:23.382-04:00  INFO 15348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T12:56:23.410-04:00  INFO 15348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2024-06-23T12:56:23.944-04:00  INFO 15348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T12:56:23.950-04:00  INFO 15348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T12:56:23.950-04:00  INFO 15348 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T12:56:24.028-04:00  INFO 15348 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T12:56:24.029-04:00  INFO 15348 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1047 ms
+2024-06-23T12:56:24.105-04:00  INFO 15348 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T12:56:24.113-04:00  INFO 15348 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T12:56:24.122-04:00  INFO 15348 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T12:56:24.123-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-06-23T12:56:24.333-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@6b7a0a13
+2024-06-23T12:56:24.337-04:00  INFO 15348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-06-23T12:56:24.346-04:00  WARN 15348 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T12:56:24.346-04:00  WARN 15348 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T12:56:24.477-04:00  INFO 15348 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T12:56:24.500-04:00  INFO 15348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T12:56:24.792-04:00  WARN 15348 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T12:56:25.167-04:00  INFO 15348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T12:56:25.320-04:00  INFO 15348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T12:56:25.335-04:00  INFO 15348 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 2.418 seconds (process running for 5193.794)
+2024-06-23T12:56:25.341-04:00  INFO 15348 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-23T12:56:25.664-04:00  INFO 15348 --- [http-nio-8085-exec-3] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T12:56:25.664-04:00  INFO 15348 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T12:56:25.666-04:00  INFO 15348 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-23T14:06:00.307-04:00  INFO 15348 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T14:06:00.309-04:00  INFO 15348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-06-23T14:06:00.345-04:00  INFO 15348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-06-23T15:20:19.555-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 13768 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T15:20:19.575-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T15:20:19.689-04:00  INFO 13768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23T15:20:19.690-04:00  INFO 13768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23T15:20:21.687-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T15:20:21.805-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
+2024-06-23T15:20:22.803-04:00  INFO 13768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T15:20:22.848-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T15:20:22.848-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T15:20:22.959-04:00  INFO 13768 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T15:20:22.960-04:00  INFO 13768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3269 ms
+2024-06-23T15:20:23.244-04:00  INFO 13768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T15:20:23.353-04:00  INFO 13768 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T15:20:23.417-04:00  INFO 13768 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T15:20:23.913-04:00  INFO 13768 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T15:20:23.955-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T15:20:24.432-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28baa4f
+2024-06-23T15:20:24.435-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T15:20:24.536-04:00  WARN 13768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T15:20:24.549-04:00  WARN 13768 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T15:20:27.090-04:00  INFO 13768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T15:20:27.482-04:00  INFO 13768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T15:20:28.156-04:00  INFO 13768 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-23T15:20:29.970-04:00  WARN 13768 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T15:20:30.850-04:00  INFO 13768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T15:20:30.964-04:00  INFO 13768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T15:20:30.995-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 12.257 seconds (process running for 14.729)
+2024-06-23T15:22:15.441-04:00  INFO 13768 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T15:22:15.442-04:00  INFO 13768 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T15:22:15.444-04:00  INFO 13768 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-23T15:30:03.986-04:00  WARN 13768 --- [http-nio-8085-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:30:22.380-04:00  WARN 13768 --- [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:30:49.117-04:00  WARN 13768 --- [http-nio-8085-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:31:03.438-04:00  WARN 13768 --- [http-nio-8085-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:31:18.872-04:00  WARN 13768 --- [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:31:41.545-04:00  WARN 13768 --- [http-nio-8085-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:31:43.138-04:00  WARN 13768 --- [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:31:52.600-04:00  WARN 13768 --- [http-nio-8085-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:32:03.803-04:00  WARN 13768 --- [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:32:34.397-04:00  WARN 13768 --- [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:32:50.621-04:00  WARN 13768 --- [http-nio-8085-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:32:53.542-04:00  WARN 13768 --- [http-nio-8085-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "transactionSummaryByCategory"]
+2024-06-23T15:53:20.465-04:00  WARN 13768 --- [http-nio-8085-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sun Feb 04 2024 00:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T15:53:20.465-04:00  WARN 13768 --- [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sun Feb 04 2024 00:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T15:53:32.671-04:00  WARN 13768 --- [http-nio-8085-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sun Feb 04 2024 00:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T15:53:32.675-04:00  WARN 13768 --- [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Sun Feb 04 2024 00:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T15:54:19.559-04:00  WARN 13768 --- [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Mon Jun 03 2024 00:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T15:54:19.560-04:00  WARN 13768 --- [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [Mon Jun 03 2024 00:00:00 GMT-0400 (Bolivia Time)]]
+2024-06-23T15:54:51.096-04:00  WARN 13768 --- [http-nio-8085-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [2024-06-02T04:00:00.000Z]]
+2024-06-23T15:54:51.098-04:00  WARN 13768 --- [http-nio-8085-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable @org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value [2024-06-02T04:00:00.000Z]]
+2024-06-23T16:09:46.835-04:00  INFO 13768 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-06-23T16:09:46.897-04:00  INFO 13768 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:09:46.913-04:00  INFO 13768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T16:09:46.921-04:00  INFO 13768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T16:09:47.126-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 13768 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T16:09:47.127-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T16:09:47.895-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:09:47.915-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-06-23T16:09:48.053-04:00  INFO 13768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T16:09:48.054-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:09:48.054-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T16:09:48.103-04:00  INFO 13768 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:09:48.103-04:00  INFO 13768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 972 ms
+2024-06-23T16:09:48.167-04:00  INFO 13768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:09:48.172-04:00  INFO 13768 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:09:48.179-04:00  INFO 13768 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:09:48.181-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-23T16:09:48.401-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@47b4f7e0
+2024-06-23T16:09:48.401-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-23T16:09:48.459-04:00  WARN 13768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T16:09:48.459-04:00  WARN 13768 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:09:48.594-04:00  INFO 13768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:09:48.632-04:00  INFO 13768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:09:48.855-04:00  WARN 13768 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionController' defined in file [D:\backendProject\Backend-Ecommerce\build\classes\java\main\com\example\demo\presentation\controller\TransactionController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.service.interfaces.TransactionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-23T16:09:48.857-04:00  INFO 13768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:09:48.858-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-23T16:09:49.129-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-06-23T16:09:49.130-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-23T16:09:49.145-04:00  INFO 13768 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-23T16:09:49.217-04:00 ERROR 13768 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.demo.presentation.controller.TransactionController required a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' in your configuration.
+
+2024-06-23T16:09:50.938-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 13768 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T16:09:50.938-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T16:09:51.675-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:09:51.725-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2024-06-23T16:09:52.013-04:00  INFO 13768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T16:09:52.018-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:09:52.018-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T16:09:52.083-04:00  INFO 13768 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:09:52.084-04:00  INFO 13768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1141 ms
+2024-06-23T16:09:52.147-04:00  INFO 13768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:09:52.156-04:00  INFO 13768 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:09:52.167-04:00  INFO 13768 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:09:52.169-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-06-23T16:09:52.457-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@41d6dd89
+2024-06-23T16:09:52.457-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-06-23T16:09:52.472-04:00  WARN 13768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T16:09:52.472-04:00  WARN 13768 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:09:52.580-04:00  INFO 13768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:09:52.608-04:00  INFO 13768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:09:53.057-04:00  WARN 13768 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T16:09:53.380-04:00  INFO 13768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T16:09:53.435-04:00  INFO 13768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T16:09:53.449-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 2.553 seconds (process running for 2977.182)
+2024-06-23T16:09:53.453-04:00  INFO 13768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-23T16:10:00.178-04:00  INFO 13768 --- [http-nio-8085-exec-3] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T16:10:00.178-04:00  INFO 13768 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T16:10:00.180-04:00  INFO 13768 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T16:12:58.582-04:00  INFO 13768 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-06-23T16:12:58.613-04:00  INFO 13768 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:12:58.614-04:00  INFO 13768 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-06-23T16:12:58.619-04:00  INFO 13768 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-06-23T16:12:58.787-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 13768 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T16:12:58.787-04:00  INFO 13768 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T16:12:59.652-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:12:59.857-04:00  INFO 13768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 2 JPA repository interfaces.
+2024-06-23T16:13:00.338-04:00  INFO 13768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T16:13:00.340-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:13:00.340-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T16:13:00.475-04:00  INFO 13768 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:13:00.475-04:00  INFO 13768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1683 ms
+2024-06-23T16:13:00.608-04:00  INFO 13768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:13:00.651-04:00  INFO 13768 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:13:00.687-04:00  INFO 13768 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:13:00.690-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-06-23T16:13:01.080-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@13773a1c
+2024-06-23T16:13:01.080-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-06-23T16:13:01.097-04:00  WARN 13768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T16:13:01.098-04:00  WARN 13768 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:13:01.231-04:00  INFO 13768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:13:01.264-04:00  INFO 13768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:13:01.477-04:00  WARN 13768 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionController' defined in file [D:\backendProject\Backend-Ecommerce\build\classes\java\main\com\example\demo\presentation\controller\TransactionController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.service.interfaces.TransactionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-23T16:13:01.477-04:00  INFO 13768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:13:01.478-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-06-23T16:13:01.496-04:00  INFO 13768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-06-23T16:13:01.497-04:00  INFO 13768 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-23T16:13:01.510-04:00  INFO 13768 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-23T16:13:01.522-04:00 ERROR 13768 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.demo.presentation.controller.TransactionController required a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' in your configuration.
+
+2024-06-23T16:13:26.590-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 20004 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T16:13:26.594-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T16:13:26.689-04:00  INFO 20004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23T16:13:26.689-04:00  INFO 20004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23T16:13:28.125-04:00  INFO 20004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:13:28.255-04:00  INFO 20004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
+2024-06-23T16:13:29.272-04:00  INFO 20004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T16:13:29.307-04:00  INFO 20004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:13:29.308-04:00  INFO 20004 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T16:13:29.415-04:00  INFO 20004 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:13:29.416-04:00  INFO 20004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2726 ms
+2024-06-23T16:13:29.617-04:00  INFO 20004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:13:29.719-04:00  INFO 20004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T16:13:29.771-04:00  INFO 20004 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:13:30.265-04:00  INFO 20004 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:13:30.301-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T16:13:30.589-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10c03778
+2024-06-23T16:13:30.591-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T16:13:30.644-04:00  WARN 20004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T16:13:30.654-04:00  WARN 20004 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:13:32.380-04:00  INFO 20004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:13:32.437-04:00  INFO 20004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:13:32.986-04:00  INFO 20004 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-23T16:13:34.310-04:00  WARN 20004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T16:13:34.865-04:00  INFO 20004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T16:13:34.928-04:00  INFO 20004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T16:13:34.941-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 9.233 seconds (process running for 11.742)
+2024-06-23T16:13:40.811-04:00  INFO 20004 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T16:13:40.812-04:00  INFO 20004 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T16:13:40.814-04:00  INFO 20004 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T16:15:14.270-04:00  INFO 20004 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-06-23T16:15:14.361-04:00  INFO 20004 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:15:14.370-04:00  INFO 20004 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T16:15:14.383-04:00  INFO 20004 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-23T16:15:14.640-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 20004 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T16:15:14.641-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T16:15:15.197-04:00  INFO 20004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:15:15.234-04:00  INFO 20004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2024-06-23T16:15:15.508-04:00  INFO 20004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T16:15:15.509-04:00  INFO 20004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:15:15.510-04:00  INFO 20004 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T16:15:15.587-04:00  INFO 20004 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:15:15.588-04:00  INFO 20004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 943 ms
+2024-06-23T16:15:15.740-04:00  INFO 20004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:15:15.751-04:00  INFO 20004 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:15:15.767-04:00  INFO 20004 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:15:15.770-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-23T16:15:16.094-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6f4432a9
+2024-06-23T16:15:16.094-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-23T16:15:16.112-04:00  WARN 20004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T16:15:16.114-04:00  WARN 20004 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:15:16.417-04:00  INFO 20004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:15:16.457-04:00  INFO 20004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:15:16.672-04:00  WARN 20004 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionController' defined in file [D:\backendProject\Backend-Ecommerce\build\classes\java\main\com\example\demo\presentation\controller\TransactionController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.domain.service.interfaces.TransactionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-23T16:15:16.673-04:00  INFO 20004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:15:16.674-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-23T16:15:17.027-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-06-23T16:15:17.028-04:00  INFO 20004 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-23T16:15:17.045-04:00  INFO 20004 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-23T16:15:17.112-04:00 ERROR 20004 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.demo.presentation.controller.TransactionController required a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.domain.service.interfaces.TransactionService' in your configuration.
+
+2024-06-23T16:15:18.601-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 20004 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T16:15:18.601-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T16:15:18.921-04:00  INFO 20004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:15:18.944-04:00  INFO 20004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-06-23T16:15:19.064-04:00  INFO 20004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T16:15:19.065-04:00  INFO 20004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:15:19.065-04:00  INFO 20004 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T16:15:19.095-04:00  INFO 20004 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:15:19.095-04:00  INFO 20004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 492 ms
+2024-06-23T16:15:19.122-04:00  INFO 20004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:15:19.125-04:00  INFO 20004 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:15:19.130-04:00  INFO 20004 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:15:19.131-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-06-23T16:15:19.267-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@4c675328
+2024-06-23T16:15:19.267-04:00  INFO 20004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-06-23T16:15:19.276-04:00  WARN 20004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T16:15:19.277-04:00  WARN 20004 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:15:19.369-04:00  INFO 20004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:15:19.395-04:00  INFO 20004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:15:19.621-04:00  WARN 20004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T16:15:19.790-04:00  INFO 20004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T16:15:19.811-04:00  INFO 20004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T16:15:19.817-04:00  INFO 20004 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.244 seconds (process running for 116.618)
+2024-06-23T16:15:19.820-04:00  INFO 20004 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-23T16:15:24.345-04:00  INFO 20004 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T16:15:24.346-04:00  INFO 20004 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T16:15:24.347-04:00  INFO 20004 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-23T16:33:37.667-04:00  INFO 20004 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:33:37.669-04:00  INFO 20004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-06-23T16:33:37.732-04:00  INFO 20004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-06-23T16:44:22.548-04:00  INFO 23008 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 23008 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T16:44:22.551-04:00  INFO 23008 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T16:44:22.647-04:00  INFO 23008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23T16:44:22.648-04:00  INFO 23008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23T16:44:24.192-04:00  INFO 23008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T16:44:24.306-04:00  INFO 23008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2024-06-23T16:44:25.756-04:00  INFO 23008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T16:44:25.789-04:00  INFO 23008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T16:44:25.789-04:00  INFO 23008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T16:44:25.986-04:00  INFO 23008 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T16:44:25.988-04:00  INFO 23008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3338 ms
+2024-06-23T16:44:26.341-04:00  INFO 23008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T16:44:26.439-04:00  INFO 23008 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T16:44:26.493-04:00  INFO 23008 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T16:44:27.015-04:00  INFO 23008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T16:44:27.058-04:00  INFO 23008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T16:44:27.343-04:00  INFO 23008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14d466b7
+2024-06-23T16:44:27.345-04:00  INFO 23008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T16:44:27.392-04:00  WARN 23008 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T16:44:27.401-04:00  WARN 23008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T16:44:29.194-04:00  INFO 23008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T16:44:29.318-04:00  INFO 23008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T16:44:29.916-04:00  INFO 23008 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-23T16:44:31.290-04:00  WARN 23008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T16:44:31.832-04:00  INFO 23008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T16:44:31.909-04:00  INFO 23008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T16:44:31.921-04:00  INFO 23008 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 10.188 seconds (process running for 13.014)
+2024-06-23T16:45:59.897-04:00  INFO 23008 --- [http-nio-8085-exec-2] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T16:45:59.898-04:00  INFO 23008 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T16:45:59.902-04:00  INFO 23008 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-23T18:05:24.767-04:00  INFO 3584 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.3.1 with PID 3584 (D:\backendProject\Backend-Ecommerce\build\classes\java\main started by ROG in D:\backendProject\Backend-Ecommerce)
+2024-06-23T18:05:24.788-04:00  INFO 3584 --- [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2024-06-23T18:05:24.960-04:00  INFO 3584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23T18:05:24.961-04:00  INFO 3584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23T18:05:27.770-04:00  INFO 3584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23T18:05:27.914-04:00  INFO 3584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 3 JPA repository interfaces.
+2024-06-23T18:05:29.092-04:00  INFO 3584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-06-23T18:05:29.123-04:00  INFO 3584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-23T18:05:29.123-04:00  INFO 3584 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-06-23T18:05:29.273-04:00  INFO 3584 --- [restartedMain] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring embedded WebApplicationContext
+2024-06-23T18:05:29.274-04:00  INFO 3584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4311 ms
+2024-06-23T18:05:29.685-04:00  INFO 3584 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23T18:05:29.837-04:00  INFO 3584 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-23T18:05:29.920-04:00  INFO 3584 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-23T18:05:30.625-04:00  INFO 3584 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-23T18:05:30.693-04:00  INFO 3584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-23T18:05:31.296-04:00  INFO 3584 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28baa4f
+2024-06-23T18:05:31.299-04:00  INFO 3584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-23T18:05:31.409-04:00  WARN 3584 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-06-23T18:05:31.425-04:00  WARN 3584 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-23T18:05:33.506-04:00  INFO 3584 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-23T18:05:36.844-04:00  INFO 3584 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T18:05:37.400-04:00  INFO 3584 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-23T18:05:39.066-04:00  WARN 3584 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23T18:05:39.827-04:00  INFO 3584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-23T18:05:39.901-04:00  INFO 3584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/store/v1'
+2024-06-23T18:05:39.925-04:00  INFO 3584 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 17.077 seconds (process running for 23.73)
+2024-06-23T18:06:13.621-04:00  INFO 3584 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[localhost].[/store/v1]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23T18:06:13.621-04:00  INFO 3584 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-23T18:06:13.625-04:00  INFO 3584 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-06-23T18:24:10.641-04:00  INFO 3584 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23T18:24:10.645-04:00  INFO 3584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-23T18:24:10.657-04:00  INFO 3584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

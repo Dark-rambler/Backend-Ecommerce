@@ -14,7 +14,7 @@ public interface TransactionRepository extends GenericRepository<Transaction, In
 
   @Query(
       "SELECT new com.example.demo.presentation.response.pojo.TransactionPojo"
-          + "(t.id, t.documentNumber, t.socialReason,t.amount, t.isIncome, t.description, to_char(t.date, 'DD-MM-YYYY'), d.id, d.name) "
+          + "(t.id,t.socialReason, t.documentNumber, t.amount, t.isIncome, t.description, to_char(t.date, 'DD-MM-YYYY'), d.id, d.name) "
           + "FROM Transaction t "
           + "INNER JOIN t.documentType d "
           + "WHERE t.id = :id AND t.active"
@@ -34,7 +34,7 @@ public interface TransactionRepository extends GenericRepository<Transaction, In
       + "(t.id, t.socialReason, t.documentNumber, t.amount, t.isIncome, t.description, to_char(t.date, 'DD-MM-YYYY'), d.id, d.name) "
       + "FROM Transaction t "
       + "INNER JOIN t.documentType d "
-      + "WHERE t.isIncome = :isIncome AND t.date BETWEEN :startDate AND :endDate")
+      + "WHERE  t.active AND t.isIncome = :isIncome AND t.date BETWEEN :startDate AND :endDate")
   List<TransactionPojo> findTransactionsByDateRangeAndIsIncome(
       @Param("isIncome") boolean isIncome,
       @Param("startDate") LocalDateTime startDate,
@@ -46,7 +46,7 @@ public interface TransactionRepository extends GenericRepository<Transaction, In
       "SUM(CASE WHEN t.isIncome = true THEN t.amount ELSE 0 END) AS totalIncome, " +
       "SUM(CASE WHEN t.isIncome = false THEN t.amount ELSE 0 END) AS totalExpense " +
       "FROM Transaction t " +
-      "WHERE t.date BETWEEN :startDate AND :endDate " +
+      "WHERE t.active AND t.date BETWEEN :startDate AND :endDate " +
       "GROUP BY YEAR(t.date), MONTH(t.date) " +
       "ORDER BY YEAR(t.date), MONTH(t.date)")
   List<Object[]> findMonthlySummary(
