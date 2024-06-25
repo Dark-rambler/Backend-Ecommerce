@@ -61,7 +61,7 @@ public class TransactionServiceImpl extends CRUDServiceImpl<Transaction, Integer
 
     Transaction transaction = mapper.fromDto(dto, found);
     transaction.setDocumentType(documentType);
-
+    repository.save(transaction);
     return transaction;
   }
 
